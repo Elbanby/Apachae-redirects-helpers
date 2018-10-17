@@ -12,8 +12,11 @@ const damLinks = `./results/dam_${output}`
 const inStream1 = fs.createReadStream(file1);
 const inStream2 = fs.createReadStream(file2);
 
-const rl1 = readline.createInterface(inStream1, process.stdout);
-const rl2 = readline.createInterface(inStream1, process.stdout);
+const outStream1 = fs.createWriteStream(contetnLinks);
+const outStream2 = fs.createWriteStream(damLinks);
+
+const rl1 = readline.createInterface(inStream1, outStream1);
+const rl2 = readline.createInterface(inStream1, outStream2);
 
 var orUrlArray = [];
 var destUrlArray = [];
@@ -43,7 +46,7 @@ function concatFiles() {
   if (hasBothValues === 2) {
     for (let i = 0; i < orUrlArray.length; i++) {
       str = `${orUrlArray[i]}${delimeter}${destUrlArray[i]}\n`;
-      (str.search('/dam/'))?  writeFile(contetnLinks ,str): writeFile(damLinks,str);
+      (str.indexOf('/dam/') > -1)? writeFile(damLinks,str) : writeFile(contetnLinks ,str);
     }
   }
 }
