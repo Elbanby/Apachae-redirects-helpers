@@ -17,7 +17,7 @@ const rl = readline.createInterface(inStream);
 
 var date = new Date(Date.now());
 
-const header = `\n\n# DATE CREATED: ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}\n\n;`;
+const header = `\n\n# DATE CREATED: ${date.getMonth()}/${date.getDay()}/${date.getYear()} @${date.getHours()}:${date.getMinutes()}:${date.getSeconds()};\n\n`;
 
 append(header);
 
