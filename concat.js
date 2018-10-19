@@ -16,7 +16,7 @@ const outStream1 = fs.createWriteStream(contetnLinks);
 const outStream2 = fs.createWriteStream(damLinks);
 
 const rl1 = readline.createInterface(inStream1, outStream1);
-const rl2 = readline.createInterface(inStream1, outStream2);
+const rl2 = readline.createInterface(inStream2, outStream2);
 
 var orUrlArray = [];
 var destUrlArray = [];
