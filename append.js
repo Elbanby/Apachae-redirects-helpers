@@ -11,7 +11,9 @@ const readline = require("readline");
 const file1 = process.argv[2];
 const file2 = process.argv[3];
 
-const inStream = fs.createReadStream(file1);
+const path = `./results/`;
+
+const inStream = fs.createReadStream(`${path}${file1}`);
 
 const rl = readline.createInterface(inStream);
 

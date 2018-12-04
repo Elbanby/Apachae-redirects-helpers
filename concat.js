@@ -4,19 +4,20 @@ const readline = require('readline');
 const file1 = process.argv[2];
 const file2 = process.argv[3];
 const output = process.argv[4];
-const delimeter = process.argv[5];
+const delimeter = process.argv[5] || ' ';
 
+const path = `./resources/`;
 const contetnLinks = `./results/${output}`
 const damLinks = `./results/dam_${output}`
 
-const inStream1 = fs.createReadStream(file1);
-const inStream2 = fs.createReadStream(file2);
+const inStream1 = fs.createReadStream(`${path}${file1}`);
+const inStream2 = fs.createReadStream(`${path}${file2}`);
 
 const outStream1 = fs.createWriteStream(contetnLinks);
 const outStream2 = fs.createWriteStream(damLinks);
 
-const rl1 = readline.createInterface(inStream1, outStream1);
-const rl2 = readline.createInterface(inStream2, outStream2);
+const rl1 = readline.createInterface( inStream1, outStream1);
+const rl2 = readline.createInterface( inStream2, outStream2);
 
 var orUrlArray = [];
 var destUrlArray = [];
