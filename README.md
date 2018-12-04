@@ -20,7 +20,7 @@ to it. Just keep the helpers scripts originally in the file.
   1- You will need to add all the redirects url AKA 'From' urls. to the resource
      folder. A file extension could be  (.txt or .csv)
 
-     //TODO include an image of how the file should look like
+     ![](images/tree.png)
 
   2- You will need to add all the redirect to url AKA 'To' urls. to the resource
      folder.  A file extension could be  (.txt or .csv)
