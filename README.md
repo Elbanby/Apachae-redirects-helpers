@@ -1,7 +1,8 @@
 # Apache Redirects Helpers Scripts
 
 ## Perquisites
-   1- node Js.  (minumum v8.12.0)
+   1- node Js. (minumum v8.12.0)
+   
    2- git
 
 ### About
