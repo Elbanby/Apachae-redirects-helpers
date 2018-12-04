@@ -29,21 +29,17 @@ to it. Just keep the helpers scripts originally in the file.
 
   3- Then run the concat.js to create a from to relation for the urls
 
-    ```
-    JS
-      node concat.js from.csv to.csv concatenated_result.txt <delimiter>
-    ```
+   `node concat.js from.csv to.csv concatenated_result.txt <delimiter>`
+    
     ఠ_ఠ N.B:
-      Delimiter defaults to a single space.
+      Delimiter defaults to a single space. You could however have any delimiter you specify
 
-    You could however have any delimiter you specify
-
-    4- Then we run append.js Which is a helper Js script that append to the
+  4- Then we run append.js Which is a helper Js script that append to the
        end of a file.
 
-    ```
-      node append.js 'From'  'Absolute path (to)';
-    ```
+   `node append.js 'From'  'Absolute path (to)';`
+    
+    
     You might need to run this script twice if you have both content and dam
 
    5- Now you can operate the last script which automates the redirects testing
