@@ -1,8 +1,8 @@
 # Apache Redirects Helpers Scripts
 
 ## Perquisites
-    1- node Js (v8.12.0)
-    2- git
+   1- node Js.  (minumum v8.12.0)
+   2- git
 
 ### About
 
@@ -31,16 +31,15 @@ to it. Just keep the helpers scripts originally in the file.
 
    `node concat.js from.csv to.csv concatenated_result.txt <delimiter>`
     
-    ఠ_ఠ N.B:
-      Delimiter defaults to a single space. You could however have any delimiter you specify
+   ఠ_ఠ N.B:
+     Delimiter defaults to a single space. You could however have any delimiter you specify
 
   4- Then we run append.js Which is a helper Js script that append to the
        end of a file.
 
    `node append.js 'From'  'Absolute path (to)';`
     
-    
-    You might need to run this script twice if you have both content and dam
+   You might need to run this script twice if you have both content and dam
 
    5- Now you can operate the last script which automates the redirects testing
       https://github.com/Elbanby/Redirects-Reporter
