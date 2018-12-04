@@ -27,13 +27,15 @@ to it. Just keep the helpers scripts originally in the file.
      folder.  A file extension could be  (.txt or .csv)
 
 
-  3- Then run the concat.js to create a from to relation for the urls
+  3- Then run the concat.js to create a from to relation for the urls seprated by a single space.
 
-   `node concat.js from.csv to.csv concatenated_result.txt <delimiter>`
+   `node concat.js from.csv to.csv concatenated_result.txt`
     
-   ఠ_ఠ N.B:
-     Delimiter defaults to a single space. You could however have any delimiter you specify
+   ఠ_ఠ N.B: 
+     you can add a deliemter if needed by spcifiying the delimeter as your last argument 
 
+     `node concat.js from.csv to.csv concatenated_result.txt <delimeter>`
+     
   4- Then we run append.js Which is a helper Js script that append to the
        end of a file.
 
