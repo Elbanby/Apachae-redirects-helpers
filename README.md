@@ -20,12 +20,12 @@ to it. Just keep the helpers scripts originally in the file.
   1- You will need to add all the redirects url AKA 'From' urls. to the resource
      folder. A file extension could be  (.txt or .csv)
 
-     ![](images%20tree.png)
+![tree](https://user-images.githubusercontent.com/25230868/49466689-b104b700-f7ce-11e8-959f-83209a13b85e.png)
 
+     
   2- You will need to add all the redirect to url AKA 'To' urls. to the resource
      folder.  A file extension could be  (.txt or .csv)
 
-     //TODO include an image of how the file should look like
 
   3- Then run the concat.js to create a from to relation for the urls
 
@@ -47,5 +47,4 @@ to it. Just keep the helpers scripts originally in the file.
     You might need to run this script twice if you have both content and dam
 
    5- Now you can operate the last script which automates the redirects testing
-
-    //TODO: Describe how it works and modify script.
+      https://github.com/Elbanby/Redirects-Reporter
